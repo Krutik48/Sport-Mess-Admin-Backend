@@ -10,7 +10,7 @@ app.use(passport.initialize());
 app.use(cors());
 app.use(auth);
 
-require('./config/mongoConnection');
+require('./Config/mongoConnection');
 
 const port = process.env.PORT;
 app.listen(port, () => {
